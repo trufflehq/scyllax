@@ -80,7 +80,7 @@ jobs:
 
       - name: Releasing assets
         id: upload_asset
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
           files: ${{ steps.bundle_name.outputs.value }}.tgz
         env:
