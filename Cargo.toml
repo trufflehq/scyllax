@@ -18,15 +18,15 @@ readme = "README.md"
 scyllax-macros = { verison = "0.2.0", path = "./scyllax-macros" }
 scyllax-macros-core = { verison = "0.2.0", path = "./scyllax-macros-core" }
 scyllax-parser = { verison = "0.2.0", path = "./scyllax-parser" }
-tracing = "0.1"
-tracing-subscriber = { version = "0.3", features = ["env-filter", "fmt", "json", "tracing-log", "parking_lot"] }
-tokio = { version = "1", features = ["full", "tracing"] }
-scylla = { version = "0.12", features = ["time"] }
-serde_json = { version = "1", features = ["preserve_order"] }
-serde = { version = "1", features = ["derive"] }
-uuid = { version = "1", features = ["serde", "v1", "std", "fast-rng"] }
-darling = "0.20"
-trybuild = "1"
+tracing = "0.1.40"
+tracing-subscriber = { version = "0.3.18", features = ["env-filter", "fmt", "json", "tracing-log", "parking_lot"] }
+tokio = { version = "1.38.0", features = ["full", "tracing"] }
+scylla = { version = "0.13.0", features = ["time"] }
+serde_json = { version = "1.0.120", features = ["preserve_order"] }
+serde = { version = "1.0.203", features = ["derive"] }
+uuid = { version = "1.9.1", features = ["serde", "v1", "std", "fast-rng"] }
+darling = "0.20.9"
+trybuild = "1.0.96"
 
 [profile.dev.package.backtrace]
 opt-level = 3

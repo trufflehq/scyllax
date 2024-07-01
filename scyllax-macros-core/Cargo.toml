@@ -12,8 +12,8 @@ readme = "../README.md"
 [dependencies]
 bae = { version = "0.2", package = "sea-bae" }
 convert_case = "0.6.0"
-darling = { version = "0.20", features = ["suggestions"] }
-proc-macro2 = "1"
-quote = "1"
+darling = { version = "0.20.9", features = ["suggestions"] }
+proc-macro2 = "1.0.86"
+quote = "1.0.36"
 scyllax-parser = { path = "../scyllax-parser", version = "0.2.0" }
-syn = { version = "2", features = ["full", "derive", "extra-traits"] }
+syn = { version = "2.0.68", features = ["full", "derive", "extra-traits"] }

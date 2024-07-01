@@ -10,28 +10,28 @@ homepage.workspace = true
 publish = false
 
 [dependencies]
-anyhow = "1"
+anyhow = "1.0.86"
 serde.workspace = true
 serde_json.workspace = true
 scylla.workspace = true
 scyllax = { path = "../scyllax", features = ["json"] }
-tokio = { version = "1", features = ["full"] }
+tokio = { version = "1.38.0", features = ["full"] }
 tracing.workspace = true
 tracing-subscriber.workspace = true
 uuid.workspace = true
-tokio-stream = "0.1.14"
-futures-util = "0.3.29"
-futures = "0.3.29"
-rayon = "1.8.0"
-time = "0.3.34"
+tokio-stream = "0.1.15"
+futures-util = "0.3.30"
+futures = "0.3.30"
+rayon = "1.10.0"
+time = "0.3.36"
 
 [features]
 default = ["integration"]
 integration = []
 
 [dev-dependencies]
-pretty_assertions = "1"
-criterion = { version = "0.5", features = ["html_reports", "async_tokio"] }
+pretty_assertions = "1.4.0"
+criterion = { version = "0.5.1", features = ["html_reports", "async_tokio"] }
 
 [[bench]]
 name = "bench"
